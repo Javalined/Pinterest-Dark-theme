@@ -56,7 +56,7 @@
 
     }
 
-       .DUt{
+       .DUt, .fev{
        background-color : #121212 !important;
        }
 
@@ -64,6 +64,11 @@
             background-color: #121212 !important;
             color: #1f1f1f !important;
         }
+
+        .GuY {
+    background-color: #1a1a1a;
+    background-color: #121212;
+    }
 
         .X8m {
             color: #ffffff;
@@ -176,7 +181,6 @@
         .Rym{
         background-color: transparent !important;
         }
-
     `;
 
     function changeBackgroundColor() {
@@ -187,7 +191,7 @@
     }
 
     const observer = new MutationObserver((mutations, observer) => {
-        changeBackgroundColor(); 
+        changeBackgroundColor();
     });
 
     observer.observe(document.body, { childList: true, subtree: true });
